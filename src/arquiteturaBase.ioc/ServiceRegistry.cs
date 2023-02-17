@@ -1,4 +1,6 @@
-﻿using StructureMap.Attributes;
+﻿using arquiteturaBase.application.Interfaces.Service;
+using arquiteturaBase.application.Services;
+using StructureMap.Attributes;
 using StructureMap.Configuration.DSL;
 
 namespace arquiteturaBase.ioc
@@ -10,6 +12,10 @@ namespace arquiteturaBase.ioc
             //ForRequestedType<IService>()
             //    .CacheBy(InstanceScope.PerRequest)
             //    .TheDefault.Is.OfConcreteType<Service>();
+
+            ForRequestedType<IRelatorioAuditoriaService>()
+               .CacheBy(InstanceScope.PerRequest)
+               .TheDefault.Is.OfConcreteType<RelatorioAuditoriaService>();
         }
     }
 }

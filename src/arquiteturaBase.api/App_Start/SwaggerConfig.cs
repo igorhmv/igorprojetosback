@@ -17,7 +17,7 @@ namespace arquiteturaBase.api
                 c.DocumentFilter<SwaggerAuthTokenOperationFilter>();
                 c.SingleApiVersion("V1", "GMEX API");
                 c.PrettyPrint();
-                c.IncludeXmlComments(GetXmlCommentsPath());
+                //c.IncludeXmlComments(GetXmlCommentsPath());
                 c.DescribeAllEnumsAsStrings();
                 c.OperationFilter<SwaggerAuthorizationHeaderFilter>();
             }).EnableSwaggerUi(c =>

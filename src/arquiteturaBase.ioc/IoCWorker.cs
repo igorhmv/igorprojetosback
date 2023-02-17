@@ -1,5 +1,6 @@
 ﻿using StructureMap;
 
+
 namespace arquiteturaBase.ioc
 {
     public static class IoCWorker

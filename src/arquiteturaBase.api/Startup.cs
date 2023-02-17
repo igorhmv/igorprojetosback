@@ -53,7 +53,7 @@ namespace arquiteturaBase.api
             {
                 AllowAnyMethod = true,
                 AllowAnyHeader = true,
-                AllowAnyOrigin = true
+                AllowAnyOrigin = true,
             };
 
             var corsOptions = new CorsOptions
@@ -64,7 +64,9 @@ namespace arquiteturaBase.api
                 }
             };
             app.UseCors(corsOptions);
-            //app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+
+            
         }
 
         private void ConfiguraAmbiente()

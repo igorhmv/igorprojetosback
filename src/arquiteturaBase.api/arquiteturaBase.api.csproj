@@ -59,17 +59,32 @@
     <Reference Include="FluentNHibernate">
       <HintPath>..\..\packages\References\FluentNHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="HMV.Core.Application.DTO">
+      <HintPath>..\..\..\..\..\..\..\HMV\lib\HMV.Core.Application.DTO.dll</HintPath>
+    </Reference>
     <Reference Include="HMV.Core.DataAccess">
       <HintPath>..\..\..\..\..\lib\HMV.Core.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="HMV.Core.Domain">
       <HintPath>..\..\..\..\..\lib\HMV.Core.Domain.dll</HintPath>
     </Reference>
+    <Reference Include="HMV.Core.DomainMap">
+      <HintPath>..\..\..\..\..\..\..\HMV\lib\HMV.Core.DomainMap.dll</HintPath>
+    </Reference>
     <Reference Include="HMV.Core.Framework">
       <HintPath>..\..\..\..\..\lib\HMV.Core.Framework.dll</HintPath>
     </Reference>
     <Reference Include="HMV.Core.Interfaces">
       <HintPath>..\..\..\..\..\lib\HMV.Core.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="HMV.Core.NH.Repository.Event">
+      <HintPath>..\..\..\..\..\..\..\HMV\lib\HMV.Core.NH.Repository.Event.dll</HintPath>
+    </Reference>
+    <Reference Include="HMV.Core.WCF.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\HMV\lib\HMV.Core.WCF.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="HMV.Core.WCF.Services">
+      <HintPath>..\..\..\..\..\..\..\HMV\lib\HMV.Core.WCF.Services.dll</HintPath>
     </Reference>
     <Reference Include="Iesi.Collections">
       <HintPath>..\..\packages\References\Iesi.Collections.dll</HintPath>
@@ -210,6 +225,7 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\RelatorioAuditoriaController.cs" />
     <Compile Include="Filters\SwaggerAuthorizationHeaderFilter.cs" />
     <Compile Include="Filters\SwaggerAuthTokenOperationFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -228,7 +244,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -32,13 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HMV.Core.Framework">
-      <HintPath>..\..\..\..\..\lib\HMV.Core.Framework.dll</HintPath>
+      <HintPath>..\arquiteturaBase.api\bin\HMV.Core.Framework.dll</HintPath>
     </Reference>
     <Reference Include="HMV.Core.Interfaces">
       <HintPath>..\..\..\..\..\lib\HMV.Core.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="HMV.Core.IoC">
-      <HintPath>..\..\..\..\..\lib\HMV.Core.IoC.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\HMV\lib\HMV.Core.IoC.dll</HintPath>
     </Reference>
     <Reference Include="OmarALZabir.AspectF">
       <HintPath>..\..\packages\References\OmarALZabir.AspectF.dll</HintPath>
