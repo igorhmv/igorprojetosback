@@ -19,7 +19,28 @@ namespace arquiteturaBase.application.Services
         {
             StringBuilder qry = new StringBuilder();
 
-            qry.AppendFormat(@"SELECT *
+            qry.AppendFormat(@"SELECT 
+                                vw.nm_paciente,
+                                vw.cd_atendimento,
+                                vw.cd_reg_fat,
+                                vw.cd_reg_amb,
+                                vw.cd_gru_fat,
+                                vw.cd_pro_fat,
+                                vw.ds_pro_fat,
+                                vw.ds_motivo_auditoria,
+                                vw.tipo_auditoria,
+                                vw.nm_setor,
+                                vw.qt_lancamento_ant,
+                                vw.qt_lancamento,
+                                vw.qt_total_ajustado,
+                                vw.vl_total_conta_ant,
+                                vw.vl_total_conta,
+                                vw.exclusaoxinclusao,
+                                vw.nm_usuario,
+                                vw.cd_usuario,
+                                vw.setor_usuario,
+                                vw.dt_auditoria,
+                                vw.acao
                                 FROM dbahmv.vw_auditoria_operacional vw
                                 WHERE vw.dt_auditoria >= to_date('{0}','DD/MM/YYYY') 
                                 AND vw.dt_auditoria <= to_date('{1}','DD/MM/YYYY')", 
