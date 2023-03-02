@@ -21,6 +21,7 @@ namespace arquiteturaBase.application.Services
 
             qry.AppendFormat(@"SELECT 
                                 vw.nm_paciente,
+                                vw.nm_convenio,
                                 vw.cd_atendimento,
                                 vw.cd_reg_fat,
                                 vw.cd_reg_amb,
@@ -48,6 +49,7 @@ namespace arquiteturaBase.application.Services
 
             IQuery query = ObjectFactory.GetInstance<IUnitOfWork>().CurrentSession.CreateSQLQuery(qry.ToString())     
                      .AddScalar("nm_paciente", NHibernateUtil.String)
+                     .AddScalar("nm_convenio", NHibernateUtil.String)
                      .AddScalar("cd_atendimento", NHibernateUtil.String)
                      .AddScalar("cd_reg_fat", NHibernateUtil.String)
                      .AddScalar("cd_reg_amb", NHibernateUtil.String)
