@@ -22,7 +22,7 @@ namespace arquiteturaBase.api
                 c.OperationFilter<SwaggerAuthorizationHeaderFilter>();
             }).EnableSwaggerUi(c =>
             {
-                c.DocumentTitle("GMEX API");
+                c.DocumentTitle("IGOR API");
                 c.DisableValidator();
             });
 
